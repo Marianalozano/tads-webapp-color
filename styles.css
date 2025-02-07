@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(135deg, #e3e3e3, #f7f7f7); /* Fondo gris claro */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 320px; /* Más pequeño */
+    padding: 20px;
+}
+
+.animated-fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.color-box {
+    width: 150px; /* Más pequeño */
+    height: 100px;
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+    transition: background 0.5s ease-in-out;
+}
+
+.custom-range {
+    accent-color: #007bff;
+    width: 80%; /* Más compacto */
+}
+
+input[type="number"] {
+    width: 60px; /* Reducir ancho de input */
+}
+
+button {
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    font-size: 14px; /* Botón más pequeño */
+}
+
+button:hover {
+    transform: scale(1.05);
+}
